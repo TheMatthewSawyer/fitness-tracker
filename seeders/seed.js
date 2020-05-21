@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const db = require("../models");
 
 mongoose.connect(
-  "mongodb://heroku_mgpljfx1:paasword1@ds237196.mlab.com:37196/heroku_mgpljfx1",
+  'mongodb://heroku_h7m5nxh8:htavlh9mm0sp4jkf3gib436jbt@ds237196.mlab.com:37196/heroku_h7m5nxh8',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
