@@ -8,7 +8,7 @@ mongoose.connect(
     useUnifiedTopology: true
   }
 );
-// mongodb://<dbuser>:<dbpassword>@ds237196.mlab.com:37196/heroku_mgpljfx1
+
 const workoutSeed = [
   {
     day: new Date().setDate(new Date().getDate()-10),
