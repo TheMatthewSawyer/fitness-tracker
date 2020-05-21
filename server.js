@@ -4,6 +4,14 @@ const mongoose = require('mongoose');
 const path = require("path");
 const db = require("./models");
 
+mongoose.connect(
+    'mongodb://heroku_h7m5nxh8:htavlh9mm0sp4jkf3gib436jbt@ds237196.mlab.com:37196/heroku_h7m5nxh8',
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true
+    }
+  );
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
@@ -77,10 +85,6 @@ app.put("/api/workouts/:id", ({ body, params }, res) => {
             res.json(err)
         })
 });
-
-mongoose.connect(
-    "mongodb://localhost/workout",
-);
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT);
